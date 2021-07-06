@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+
+.list_item {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  transform: rotate(-30deg) skew(25deg);
+  background: #fff;
+}
+
+.list .list_item .list_link--element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  background: #000;
+  transform: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.list .list_item:hover .list_link--element:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.list .list_item:hover .list_link--element:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+
+.list .list_item:hover .list_link--element:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+
+.list .list_item:hover .list_link--element:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+
+.list .list_item:hover .list_link--element:nth-child(1) {
+  transform: translate(0px, -0px);
+  opacity: 0.2;
+}
+
+.list .list_item:nth-child(1) .list_link--element {
+  background-color: #3b5999;
+}
+
+.list .list_item:nth-child(2) .list_link--element {
+  background-color: #0088cc;
+}
+
+.list .list_item:nth-child(3) .list_link--element {
+  background-color: #e4405f;
+}
+
+.list .list_item:nth-child(4) .list_link--element {
+  background-color: #0077b5;
+}
+
+.list .list_item:nth-child(5) .list_link--element {
+  background-color: #55acee;
+}
